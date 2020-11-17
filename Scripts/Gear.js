@@ -1,4 +1,5 @@
 [rewrite_local]
+
 # Gear Unlock Pro
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body Gear.js
 
