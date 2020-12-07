@@ -1,6 +1,4 @@
 # Q-Search 
-# Modified by nzw9314 
-# From Neurogram (https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Q-Search.sgmodule)
 
 # - Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
 
@@ -13,7 +11,7 @@
 # sof:  Stack Overflow
 # se:   StackExchange
 # wiki: 维基百科
-# wk:   维基中文)
+# wk:   维基中文
 # mg:   Magi
 # tf:   Google 搜索 TestFlight
 
@@ -50,9 +48,11 @@
 # 无指令则转 Google 搜索
 
 [URL Rewrite]
+# 常用功能
 
-#gm   (Google图片)
+# gm   (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
+
 # gh   (GitHub)
 ^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 302
 
@@ -77,7 +77,10 @@
 # tf  (Google 搜索 TestFlight)
 ^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 302
 
-# > 翻译
+
+
+# 翻译
+
 # yd   (有道)
 ^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ http://dict.youdao.com/search?q=$1 302
 
@@ -89,6 +92,7 @@
 
 # trj  (Google 译至日)
 ^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
+
 
 
 # 社区
@@ -117,7 +121,10 @@
 # csdn: CSDN
 ^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ https://so.csdn.net/so/search/s.do?q=$1&t=&u= 302
 
-# > 购物
+
+
+# 购物
+
 # zdm: 什么值得买
 ^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
 
@@ -132,6 +139,8 @@
 
 # tm: 天猫
 ^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
+
+
 
 # 视频资源
 
@@ -155,7 +164,8 @@
 
 
 
-# 默认搜索
+# 搜索
+
 # bi: 必应
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
 
@@ -165,8 +175,9 @@
 # ddg: DuckDuckGo 
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 
-# 无指令: 谷歌
+# 无指令: Google
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+
 
 
 [MITM]
