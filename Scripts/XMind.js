@@ -1,10 +1,9 @@
 /*
 Quantumult X 脚本:
-Xmind Unlock annual subscriptions （by LTribe）
+Xmind Unlock annual subscriptions 
 Xmind Download Link : http://t.cn/A6zhp3Bm
-Thanks To@xiaozhuolao's membership data.
 [rewrite_local]
-# Xmind Unlock annual subscriptions （by LTribe）
+# Xmind Unlock annual subscriptions
 https?:\/\/.*\.xmind\..*\/_res\/devices url script-response-body XMind.js
 [mitm]
 hostname = *.xmind.*,
@@ -24,4 +23,3 @@ obj = {
 $done({body: JSON.stringify(obj)});
 
 // Updated 20200715
-// 仅供个人参考学习交流，勿用于其它...
