@@ -12,7 +12,7 @@ let config = {
   silence: false, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
-  all_direct: ["eduroam", "iSwufe"], // 指定全局直连的wifi名字
+  all_direct: ["eduroam", "iSwufe", "HFUT-WiFi"], // 指定全局直连的wifi名字
   all_proxy: [], // 指定全局代理的wifi名字
   whitelist: ["𝐍𝐞𝐭𝐞𝐚𝐬𝐞 𝐌𝐮𝐬𝐢𝐜", "𝐀𝐝 𝐁𝐥𝐨𝐜𝐤", "𝐒𝐲𝐬𝐭𝐞𝐦 𝐔𝐩𝐝𝐚𝐭𝐞", "𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭"],
 };
