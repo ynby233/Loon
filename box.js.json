@@ -1,9 +1,9 @@
 {
-  "id": "ynby233.app.sub",
-  "name": "ynby233 应用订阅",
-  "author": "@ynby233",
-  "icon": "https://avatars1.githubusercontent.com/u/66964222?s=400&u=13859dce9b08d6f0b3a6afcbaacf0d0afe92ffd8&v=4",
-  "repo": "https://github.com/ynby233/Loon",
+  "id": "pengym.app.sub",
+  "name": "Peng-YM 应用订阅",
+  "author": "@Peng-YM",
+  "icon": "https://avatars2.githubusercontent.com/u/21050064?s=460&u=40a74913dd0a3d00670d05148c3a08c787470021&v=4",
+  "repo": "https://github.com/Peng-YM/QuanX",
   "apps": [
     {
       "id": "Telegram",
@@ -28,13 +28,13 @@
           "desc": "每个频道最多显示视频和图片的数量, 默认为3"
         }
       ],
-      "author": "@ynby233",
-      "repo": "https://github.com/ynby233/Loon",
+      "author": "@Peng-YM",
+      "repo": "https://github.com/Peng-YM/QuanX",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/telegram_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
       ],
-      "script": "https://raw.githubusercontent.com/ynby233/Loon/main/Scripts/Telegram.js"
+      "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js"
     },
     {
       "id": "ssid-auto-policy",
@@ -49,8 +49,8 @@
         "@surge_auto_policy.global_proxy",
         "@surge_auto_policy.global_direct"
       ],
-      "author": "@ynby233",
-      "repo": "https://github.com/ynby233/Loon",
+      "author": "@Peng-YM",
+      "repo": "https://github.com/Peng-YM/QuanX",
       "settings": [
         {
           "id": "@surge_auto_policy.silence",
