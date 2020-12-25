@@ -5,7 +5,7 @@
 
  * (不推荐！)手动配置项为config, 请看注释
  */
-w
+
 let config = {
   global_direct: "DIRECT",
   global_proxy: "𝐏𝐫𝐨𝐱𝐲",
