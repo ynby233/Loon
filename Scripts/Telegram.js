@@ -8,8 +8,8 @@
  */
 
 let channels = ["LoonTF"];
-let maxMedias = 4;
-let alwaysNotice = false;
+let maxMedias = 6;
+let alwaysNotice = true;
 
 const $ = API("telegram");
 if ($.read("channels") !== undefined) {
