@@ -7,14 +7,14 @@
  */
 
 let config = {
-  global_direct: "DIRECT",
+  global_direct: "𝐃𝐢𝐫𝐞𝐜𝐭",
   global_proxy: "𝐏𝐫𝐨𝐱𝐲",
   silence: false, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
-  all_direct: ["eduroam", "iSwufe", "HFUT-WiFi", "217_5G"], // 指定全局直连的wifi名字
+  all_direct: ["eduroam", "iSwufe", "HFUT-WiFi"], // 指定全局直连的wifi名字
   all_proxy: [], // 指定全局代理的wifi名字
-  whitelist: ["𝐍𝐞𝐭𝐞𝐚𝐬𝐞 𝐌𝐮𝐬𝐢𝐜", "𝐀𝐝 𝐁𝐥𝐨𝐜𝐤", "𝐒𝐲𝐬𝐭𝐞𝐦 𝐔𝐩𝐝𝐚𝐭𝐞", "𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭"],
+  whitelist: ["𝐒𝐞𝐥𝐞𝐜𝐭", "𝐈𝐏𝐋𝐂/𝐈𝐄𝐏𝐋", "𝐀𝐝 𝐁𝐥𝐨𝐜𝐤", "𝐒𝐲𝐬𝐭𝐞𝐦 𝐔𝐩𝐝𝐚𝐭𝐞", "🇭🇰𝐇𝐊 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤", "𝐆𝐥𝐨𝐛𝐚𝐥 𝐌𝐚𝐢𝐥 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤", "🇭🇰𝐇𝐊 𝐏𝐂𝐂", "🇹🇼𝐓𝐖 𝐏𝐂𝐂", "🇰🇷𝐊𝐑 𝐏𝐂𝐂", "🇯🇵𝐉𝐏 𝐏𝐂𝐂", "🇸🇬𝐒𝐆 𝐏𝐂𝐂", "🇺🇸𝐔𝐒 𝐏𝐂𝐂", "𝐃𝐢𝐫𝐞𝐜𝐭", "𝐑𝐞𝐣𝐞𝐜𝐭"],
 };
 
 const isLoon = typeof $loon !== "undefined";
@@ -43,7 +43,7 @@ if (isSurge) {
 
 manager()
   .catch((err) => {
-    notify.post("🤖️ SSID 自动策略", `❌ 出现错误`, err);
+    notify.post("𝐒𝐒𝐈𝐃 自动策略", `❌ 出现错误`, err);
     console.log("ERROR: " + err);
   })
   .finally(() => {
@@ -61,7 +61,7 @@ async function manager() {
   if (isSurge) {
     const v4_ip = $network.v4.primaryAddress;
     if (!config.silence && !v4_ip) {
-      notify.post("🤖️ SSID 自动策略", "❌ 当前无网络", "");
+      notify.post("𝐒𝐒𝐈𝐃 自动策略", "❌ 当前无网络", "");
       return;
     }
   }
@@ -94,7 +94,7 @@ async function manager() {
   $persistentStore.write(targetMode, "surge_auto_policy_mode");
   if (!config.silence) {
     notify(
-      "🤖️ SSID 自动策略",
+      "𝐒𝐒𝐈𝐃 自动策略",
       `当前网络：${ssid ? ssid : "蜂窝数据"}`,
       `${isSurge ? "Surge" : "Loon"}已切换至${lookupOutbound(targetMode)}`
     );
@@ -144,9 +144,9 @@ function getSSIDMode(ssid) {
 
 function lookupOutbound(mode) {
   return {
-    RULE: "🚦规则模式",
-    PROXY: "🚀全局代理模式",
-    DIRECT: "🎯全局直连模式",
+    RULE: "𝐑𝐔𝐋𝐄 规则模式",
+    PROXY: "𝐏𝐑𝐎𝐗𝐘 全局代理模式",
+    DIRECT: "𝐃𝐈𝐑𝐄𝐂𝐓 全局直连模式",
   }[mode];
 }
 
