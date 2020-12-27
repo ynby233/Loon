@@ -8,7 +8,7 @@
  */
 
 let channels = ["LoonTF"];
-let maxMedias = 6;
+let maxMedias = 4;
 let alwaysNotice = false;
 
 const $ = API("telegram");
