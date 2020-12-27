@@ -1,0 +1,146 @@
+{
+  "id": "ynby233.app.sub",
+  "name": "ynby233 应用订阅",
+  "author": "@ynby233",
+  "icon": "https://avatars1.githubusercontent.com/u/66964222?s=400&u=13859dce9b08d6f0b3a6afcbaacf0d0afe92ffd8&v=4",
+  "repo": "https://github.com/ynby233/Loon",
+  "apps": [
+    {
+      "id": "Telegram",
+      "name": "Telegram 频道媒体推送",
+      "keys": ["@telegram.channels", "@telegram.maxMedias"],
+      "settings": [
+        {
+          "id": "@telegram.channels",
+          "name": "频道列表",
+          "val": "[\"ABCD\"]",
+          "type": "textarea",
+          "autoGrow": false,
+          "rows": 2,
+          "desc": "频道列表，比如说一个频道的链接为https://t.me/s/ABCD，那么将\"ABCD\"加到列表中。"
+        },
+        {
+          "id": "@telegram.maxMedias",
+          "name": "每个频道最多显示视频和图片的数量",
+          "val": 3,
+          "type": "text",
+          "rows": 1,
+          "desc": "每个频道最多显示视频和图片的数量, 默认为3"
+        }
+      ],
+      "author": "@ynby233",
+      "repo": "https://github.com/ynby233/Loon",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/telegram_mini.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
+      ],
+      "script": "https://raw.githubusercontent.com/ynby233/Loon/main/Scripts/Telegram.js"
+    },
+    {
+      "id": "ssid-auto-policy",
+      "name": "SSID 自动策略",
+      "keys": [
+        "@surge_auto_policy.silence",
+        "@surge_auto_policy.cellular",
+        "@surge_auto_policy.wifi",
+        "@surge_auto_policy.all_direct",
+        "@surge_auto_policy.all_proxy",
+        "@surge_auto_policy.whitelist",
+        "@surge_auto_policy.global_proxy",
+        "@surge_auto_policy.global_direct"
+      ],
+      "author": "@ynby233",
+      "repo": "https://github.com/ynby233/Loon",
+      "settings": [
+        {
+          "id": "@surge_auto_policy.silence",
+          "name": "静默运行",
+          "val": false,
+          "type": "boolean",
+          "desc": "打开后模式切换时不显示通知"
+        },
+        {
+          "id": "@surge_auto_policy.global_proxy",
+          "name": "全局代理模式下启动的策略",
+          "val": "📌 手动选择 <== 注意需要改成自己的策略！",
+          "type": "text",
+          "desc": "全局代理模式下，所有不在白名单的策略组将自动切换至此策略。"
+        },
+        {
+          "id": "@surge_auto_policy.global_direct",
+          "name": "全局直连模式下启动的策略",
+          "val": "DIRECT",
+          "type": "text",
+          "desc": "全局直连模式下，所有不在白名单的策略组将自动切换至此策略。"
+        },
+        {
+          "id": "@surge_auto_policy.cellular",
+          "name": "默认蜂窝数据模式",
+          "val": "RULE",
+          "type": "radios",
+          "items": [
+            {
+              "key": "RULE",
+              "label": "规则模式"
+            },
+            {
+              "key": "PROXY",
+              "label": "全局代理模式"
+            },
+            {
+              "key": "DIRECT",
+              "label": "全局直连模式"
+            }
+          ],
+          "desc": "默认规则模式"
+        },
+        {
+          "id": "@surge_auto_policy.wifi",
+          "name": "默认WIFI模式",
+          "val": "RULE",
+          "type": "radios",
+          "items": [
+            {
+              "key": "RULE",
+              "label": "规则模式"
+            },
+            {
+              "key": "PROXY",
+              "label": "全局代理模式"
+            },
+            {
+              "key": "DIRECT",
+              "label": "全局直连模式"
+            }
+          ],
+          "desc": "默认规则模式"
+        },
+        {
+          "id": "@surge_auto_policy.all_direct",
+          "name": "全局直连的WIFI列表",
+          "val": "WRT32X, WRT32X Extreme",
+          "type": "text",
+          "desc": "填入全局直连的WIFI名称，多个WIFI用逗号分隔"
+        },
+        {
+          "id": "@surge_auto_policy.all_proxy",
+          "name": "全局代理的WIFI列表",
+          "val": "",
+          "type": "text",
+          "desc": "填入全局代理的WIFI名称，多个WIFI用逗号分隔"
+        },
+        {
+          "id": "@surge_auto_policy.whitelist",
+          "name": "白名单策略",
+          "val": "Netease, AdGuard",
+          "type": "text",
+          "desc": "填入白名单列表，在此列表中的策略不会执行切换。比如说去广告策略，网易云等策略可以加入此列表。多个策略用逗号分隔"
+        }
+      ],
+      "icons": [
+        "https://github.com/Peng-YM/QuanX/blob/master/assets/icons/Surge_run_transparent.png?raw=true",
+        "https://github.com/Peng-YM/QuanX/blob/master/assets/icons/Surge_run.png?raw=true"
+      ]
+    },
+  ]
+}
