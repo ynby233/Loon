@@ -12,7 +12,7 @@ let config = {
   silence: false, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
-  all_direct: ["eduroam", "iSwufe", "HFUT-WiFi", "iHeBut", "iHebut","UIR","UIR_5G"], // 指定全局直连的wifi名字
+  all_direct: ["eduroam", "iSwufe", "HFUT-WiFi", "iHeBut", "iHebut", "UIR", "UIR_5G"], // 指定全局直连的wifi名字
   all_proxy: [], // 指定全局代理的wifi名字
   whitelist: ["𝐒𝐞𝐥𝐞𝐜𝐭", "𝐈𝐏𝐋𝐂/𝐈𝐄𝐏𝐋", "𝐀𝐝 𝐁𝐥𝐨𝐜𝐤", "𝐒𝐲𝐬𝐭𝐞𝐦 𝐔𝐩𝐝𝐚𝐭𝐞", "🇭🇰𝐇𝐊 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤", "𝐆𝐥𝐨𝐛𝐚𝐥 𝐌𝐚𝐢𝐥 𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤", "🇭🇰𝐇𝐊 𝐏𝐂𝐂", "🇹🇼𝐓𝐖 𝐏𝐂𝐂", "🇰🇷𝐊𝐑 𝐏𝐂𝐂", "🇯🇵𝐉𝐏 𝐏𝐂𝐂", "🇸🇬𝐒𝐆 𝐏𝐂𝐂", "🇺🇸𝐔𝐒 𝐏𝐂𝐂", "𝐃𝐢𝐫𝐞𝐜𝐭", "𝐑𝐞𝐣𝐞𝐜𝐭"],
 };
